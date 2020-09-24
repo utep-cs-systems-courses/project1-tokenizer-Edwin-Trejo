@@ -7,11 +7,9 @@ int main()
 
   char str[30];
   printf("Enter a string:\n");
-  gets(str);
+  fgets(str,30,stdin);
 
-  printf("You entered:\n");
-  puts(str);
-
+  printf("\nYou entered:%s",str);
 
 
 
