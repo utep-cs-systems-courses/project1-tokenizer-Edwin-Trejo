@@ -1,3 +1,4 @@
+
 #ifndef _TOKENIZER_
 #define _TOKENIZER_
 
@@ -5,55 +6,23 @@
 /* Return true (non-zero) if c is a whitespace characer
    ('\t' or ' ').  
    Zero terminators are not printable (therefore false) */
-int space_char(char c)
-{
-  if(c == '\t' || c == ' '){
-    return 1;
-  }
-
-  return 0;
-}
+int space_char(char c);
 
 /* Return true (non-zero) if c is a non-whitespace 
    character (not tab or space).  
    Zero terminators are not printable (therefore false) */ 
-int non_space_char(char c)
-{
-  if(c== '\t' || c == ' '){
-    return 0;
-  }
-  
-  return 1;
-}
+int non_space_char(char c);
 
 /* Returns a pointer to the first character of the next 
    space-separated word in zero-terminated str.  Return a zero pointer if 
    str does not contain any words. */
-char  *word_start(char *str){
-  char *ptr;
-  for (int i = 0; str[i] != '\t'; i++) {
-    if(str[i] == ' ' && str[i+1] != ' ' ){
-      ptr = &(str[i+1]);
-      return ptr;
-    }
-  }
-  return NULL;
-}
-/* Returns a pointer terminator char following *word */
-char *word_terminator(char *word){
+char  *word_start(char *str);
   
-}
+/* Returns a pointer terminator char following *word */
+char *word_terminator(char *word);
 
 /* Counts the number of words in the string argument. */
-int count_words(char *str){
-  int count = 0;
-  for (int i = 0; str[i] != '\t';i++){
-    if (str[i] == ' ' && str[i + 1] != ' '){
-      count++;
-    }
-  }
-  return count+1;
-}
+int count_words(char *str);
 
 /* Returns a fresly allocated new zero-terminated string 
    containing <len> chars from <inStr> */
