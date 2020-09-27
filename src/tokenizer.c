@@ -46,7 +46,18 @@ int count_words(char *str){
   return count+1;
 }
 
-  
+char *copy_str(char *inStr, short len){
+  return 0;
+}
 
+char **tokenizer(char* str){
+  return 0;
+}
+
+void print_tokens(char **tokens){
+}
+
+void free_tokens(char **tokens){
+}
   
   
