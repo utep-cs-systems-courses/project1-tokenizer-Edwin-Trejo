@@ -1,6 +1,6 @@
 
-tokenizer_test: uimain.o tokenizer.o
-	cc -o tokenizer_test uimain.o tokenizer.o
+tokenizer_test: tester.o tokenizer.o
+	cc -o tokenizer_test tester.o tokenizer.o
 
 clean:
 	rm -f *.o tokenizer_test
