@@ -33,14 +33,16 @@ char  *word_start(char *str){
   char *ptr;
   for (int i = 0; str[i] != '\t'; i++) {
     if(str[i] == ' ' && str[i+1] != ' ' ){
-      ptr = &str[i+1];
+      ptr = &(str[i+1]);
       return ptr;
     }
   }
   return NULL;
 }
 /* Returns a pointer terminator char following *word */
-char *word_terminator(char *word);
+char *word_terminator(char *word){
+  
+}
 
 /* Counts the number of words in the string argument. */
 int count_words(char *str){
