@@ -2,11 +2,10 @@ Project 1: Tokenizer
 ====================
 # Instructions:
 
-You should document your tokenizer in this file.
+# How to run:
+1. open shell and compile using make
+   * (Run make clean if needed)
+1. once on shell write ./tokenizer_tester
+   * then it will proceed to ask you for a string
 
-This file is written in the refreshingly simple `markdown` text
-formatting language.
-
-To learn about text formatting using markdown, we encourage you to examine 
- - [../README.md](../README.md)
- - the online [Markdown Guide](https://www.markdownguide.org/).
+#Definitions:
