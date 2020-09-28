@@ -23,7 +23,7 @@ char *word_start(char *str)
   for(int i = 0; str[i] != '\t'; i++){
     if(str[i] == ' ' && str[i+1] != ' '){
       ptr = &(str[i+1]);
-      return *ptr;
+      return ptr;
     }
   }
   return 0;
@@ -35,7 +35,7 @@ char *word_terminator(char *word){
   for (int i =0; word[i] != '\t'; i++) {
     if(word[i] != ' ' && word[i+1] == ' ' ){
       ptr = &(word[i]);
-      return *ptr;
+      return ptr;
     }
   }
   return 0;
