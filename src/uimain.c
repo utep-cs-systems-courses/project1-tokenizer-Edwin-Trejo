@@ -5,18 +5,26 @@ int main()
 {
   printf("Welcome!\n");
 
-
   char str[30];
   printf("Enter a string:\n");
   fgets(str,30,stdin);
+  
 
-  printf("\nYou entered: %s",str);
+  if(space_char(str[0]) == 1){
+    printf("Please enter a valid string\n");
+  }
+  else{
+    printf("\nYou entered: %s",str);
+  }
 
+  // print_tokens(tokenize(str));
+  
+  
   
 
 
 
 
- done:
+ 
   return 0;
 }
