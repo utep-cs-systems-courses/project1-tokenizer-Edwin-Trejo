@@ -12,6 +12,7 @@ int main()
 
   printf("\nYou entered: %s",str);
 
+  
 
 
 
