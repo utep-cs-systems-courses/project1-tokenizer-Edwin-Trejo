@@ -9,12 +9,12 @@ Project 1: Tokenizer
    * Then it will proceed to ask you for a string
 
 # Definitions:
-  *uimain.c*
-  This is UI, which contains the main method.
-  *tokenizer.c
-  This is where all the functions are located
-  *history.c*
-  This file contains the functions for the history operations
+ *  *uimain.c*
+    * This is UI, which contains the main method.
+ *  *tokenizer.c*
+    * This is where all the functions are located
+ *  *history.c*
+    * This file contains the functions for the history operations
   
   
   
