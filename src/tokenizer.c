@@ -55,8 +55,15 @@ int count_words(char *str){
 }
 
 char *copy_str(char *inStr, short len){
+  char *ptr;
+  char *str = (char*)malloc(len*sizeof(char));
   
-  return 0;
+  for (int i = 0; str[i] != '\0'; i++) {
+    *ptr = *inStr;
+    ptr++;
+    inStr++;
+  }
+  return str;
 }
 
 char **tokenize(char* str){
